@@ -12,6 +12,4 @@ RUN apk --update add curl \
     && apk del curl \
     && rm -rf /var/cache/apk/*
 
-ENTRYPOINT ["docker"]
-CMD ["-v"]
-
+ENTRYPOINT ["sh"]
